@@ -36,18 +36,27 @@
                                     <action selector="coldCallButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWh-uq-NzK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ0-vP-9Qx">
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mM9-CI-fxO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="126-d8-XLL"/>
+                            <constraint firstItem="CQ0-vP-9Qx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Yf-d0-vtS"/>
                             <constraint firstItem="6wr-11-Nfz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FtX-iT-q59"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6wr-11-Nfz" secondAttribute="bottom" constant="121" id="pQA-Dd-FBi"/>
+                            <constraint firstItem="CQ0-vP-9Qx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uLn-4C-1qz"/>
                             <constraint firstItem="mM9-CI-fxO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="xrx-XA-yPV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="namesLabel" destination="mM9-CI-fxO" id="f7t-jv-w8I"/>
+                        <outlet property="numberLable" destination="CQ0-vP-9Qx" id="6tW-G0-7k1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
