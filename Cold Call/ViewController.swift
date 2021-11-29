@@ -8,7 +8,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var namesLabel: UILabel!
     
     let names = ["amal","bob","jill","jack","leon","ada","salah"]
-    var currentName = 0
+    
     
     @IBAction func coldCallButton(_ sender: UIButton) {
         nextName()
@@ -18,11 +18,12 @@ class ViewController: UIViewController {
        
     }
     func nextName(){
-        let count = names.count - 1
+       // let count = names.count - 1
+        let currentName = Int.random(in: 0..<names.count)
         namesLabel.text = names[currentName]
         
-        if currentName == count{ currentName = 0}
-        else {currentName += 1}
+      //  if currentName == count{ currentName = 0}
+       // else {currentName += 1}
     }
 
 }
